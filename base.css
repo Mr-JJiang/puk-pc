@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "MicrosoftYaHei";
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 5.21vw;
+}
+
+.container {
+  width: 11.2rem;
+  margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* banner */
+#main{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+#main::-webkit-scrollbar {
+    display: none; /*隐藏滚动条*/
+ }
+.banner {
+    width: 100%;
+    height: 9rem;
+    background: url("/images/background.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.jj_navbar {
+    width: 100%;
+    height:0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    z-index: 999;
+}
+.nav_active{
+    background: url("./images/bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.jj_navbar .nei{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.jj_navbar .logo{
+    width: 0.48rem;
+    height: 0.48rem;
+    /* background-color: #FFF7AA; */
+}
+
+.jj_navbar .jj_nav{
+  width: 80%;
+  height: 100%;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.jj_navbar .jj_nav a{
+    font-size: 0.14rem;
+    display: inherit;
+    line-height: 0.8rem;
+    margin-left: 0.48rem;
+    font-weight: bold;
+}
+
+.jj_navbar .jj_nav a:hover{
+    color: #FFF7AA;
+}
+
+
+/* content */
+.banner .content {
+    height: 2rem;
+    position: absolute;
+    top: 3.13rem;
+    right: 3.5rem;
+}
+
+.banner .content .one {
+  
+    height: 0.48rem;
+    font-size: 0.48rem;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: rgba(255, 247, 170, 1);
+    line-height: 0.48rem;
+}
+
+.banner .content .two {
+   
+    height: 0.18rem;
+    font-size: 0.18rem;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: rgba(255, 247, 170, 1);
+    line-height: 0.18rem;
+    letter-spacing: 0.1rem;
+    margin-top: 0.22rem;
+}
+
+.banner .content .three{
+    font-size: 0.24rem;
+    color: #FFF7AA;
+    margin-top: 0.22rem;
+    text-align: right;
+    height: 0.24rem;
+    position: relative;
+}
+.banner .content .three span{
+    width: 0.8rem;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.banner .content .three span:nth-child(1)::after,
+.banner .content .three span:nth-child(2)::after{
+   content: "";
+   width: 0.02rem;
+   height: 0.2rem;
+   background-color: #FFF7AA;
+   display: inline-block;
+   position: absolute;
+   top: 0.08rem;
+   right: 0;
+}
+
+/* 企业背景 */
+.beijing{
+    width: 100%;
+    height: 9rem;
+    text-align: center;
+    overflow: hidden;
+
+}
+.map{
+    height: 5rem;
+}
+
+.beijing .one{
+    font-size: 0.24rem;
+    font-weight: bold;
+    margin-top: 0.64rem;
+}
+
+.beijing .two{
+    font-size: 0.14rem;
+    font-weight: bold;
+    line-height: 0.4rem;
+}
+
+.beijing .three{
+    font-size: 0.14rem;
+    line-height: 0.3rem;
+    margin-top: 0.24rem;
+    color: #666;
+    margin-bottom: 0.48rem;
+}
+/* 项目介绍 */
+.jieshao{
+    width: 100%;
+    height: 9rem;
+    text-align: center;
+    background-color: #f5f5f5;
+    position: relative;
+ 
+}
+.jieshao .box{
+    width: 10.64rem;
+    height: 3rem;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-left: -5.3rem;
+    margin-top: -1.5rem;
+    text-align: center;
+}
+.box .one{
+    font-size: 0.24rem;
+    font-weight: bold;
+    margin-bottom: 0.48rem;
+}
+.box .two p{
+    font-size: 0.14rem;
+    line-height: 0.3rem;
+    color: #666666;
+}
+
+.box .three{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 0.64rem;
+}
+.box .three .item{
+    text-align: center;
+    font-size: 0.14rem;
+}
+
+/* 技术展示 */
+.jishu{
+    width: 100%;
+    height: 9rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+}
+.jishu .box{
+    width: 11.4rem;
+    height: 6.7rem;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.jishu .title{
+    font-size: 0.24rem;
+    color: #333;
+    margin-top: 0.74rem;
+    margin-bottom: 0.64rem;
+    font-weight: bold;
+}
+
+.jishu .box .card{
+    width: 4.8rem;
+    height: 2.54rem;
+    padding: 0.2rem;
+    box-sizing: border-box;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.jishu .box .card:nth-child(2),
+.jishu .box .card:nth-child(4)
+{
+  margin-top: 0.6rem;
+}
+.jishu .box .card .a{
+   width: 0.6rem;
+   height: 0.6rem;
+   border-radius: 50%;
+   background-color: #E7E7E7;
+   color: #B88B55;
+   font-size: 0.32rem;
+   text-align: center;
+   line-height: 0.6rem;
+}
+.jishu .box .card .b{
+   font-size: 0.18rem;
+   color: #212121;
+   font-weight: bold;
+ 
+ }
+ .jishu .box .card .c{
+    font-size: 0.14rem;
+    color: #999;
+
+  }
+
+.active{
+    background:url("./images/bg-卡片.png");
+    background-size: 100%;
+    background-repeat: no-repeat;   
+}
+.active div{
+    color: #fff !important;
+}
+.active .a{
+    color: #B88B55 !important;
+}
+
+  /* app下载 */
+  .app{
+    width: 100%;
+    height: 9rem;
+    background:url("./images/bg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    overflow: hidden;
+ 
+  }
+  .app .title{
+    font-size: 0.24rem;
+    color: #333;
+    margin-top: 0.74rem;
+    margin-bottom: 0.64rem;
+    font-weight: bold;
+  }
+  .app .img{
+      width: 7rem;
+      height: 7rem;
+  }
+  .app .main{
+      width: 12rem;
+      height: 7rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .app .info{
+      width: 4rem;
+      height: 4rem;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      position: relative;
+  }
+  .app .info .a{
+      font-size: 0.36rem;
+      color: #2E3037;
+  }
+  .app .info .b{
+    font-size: 0.14rem;
+    color: #2E3037;
+    margin: 0.32rem 0 0.64rem 0;
+    line-height: 0.3rem;
+}
+.app .info .c{
+    height: 0.4rem;
+    display: flex;
+}
+.ios{
+    width: 1.28rem;
+    height: 1.5rem;
+    position: absolute;
+    bottom: -0.28rem;
+}
+
+.anzhuo{
+    width: 1.28rem;
+    height: 1.5rem;
+    position: absolute;
+    bottom: -0.28rem;
+    right: 1.15rem;
+}
+/* 联系我们 */
+.cancat{
+    width: 100%;
+    height: 9rem;
+    text-align: center;
+    position: relative;
+}
+.cancat p{
+    font-size: 0.14rem;
+}
+.cancat p:nth-child(1){
+    font-size: 0.24rem;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 0.48rem;
+}
+.cancat p:nth-child(2){
+    font-size: 0.14rem;
+    line-height: 0.3rem;
+    color: #666;
+}
+.cancat p:nth-child(3){
+    font-size: 0.16rem;
+    margin-top: 0.48rem;
+    color: #B88B55;
+}
+.cancat p:nth-child(4){
+    font-size: 0.16rem;
+    margin-top: 0.16rem;
+    color: #B88B55;
+}
+.cancat .box{
+    height: 4rem;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-top: -2rem;
+    margin-left: -5.6rem;
+}
